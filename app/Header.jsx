@@ -4,7 +4,7 @@ import { navigation } from "./components/Navigation";
 
 export default function Header(){
     return(
-        <header className="w-full py-[15px]">
+        <header className="py-[15px]">
             <nav className="w-4/5 mx-auto flex justify-between items-center">
                 <Link href="/">
                     <Image src="/kursbu-logo.webp" width={200} height={200} />

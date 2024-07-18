@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Banner from "./homePageComponents/Banner";
 
 export default function Home() {
   return (
     <main>
-      <p className="text-3xl font-poppins">benim adım merd</p>
+      <Banner />
     </main>
   );
 }
