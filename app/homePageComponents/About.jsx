@@ -19,7 +19,7 @@ export default function About() {
   }, [scrollY, controls1, controls2, controls3]);
 
   return (
-    <div className="w-4/5 mx-auto grid grid-cols-2 items-center py-[60px]">
+    <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-[60px]">
       <div className="relative h-screen">
         <motion.img
           src="/about-01.png"
