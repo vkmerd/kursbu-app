@@ -1,14 +1,16 @@
 import Banner from "./homePageComponents/Banner";
 import About from "./homePageComponents/About";
-import Features from "./homePageComponents/Features";
+import Info from "./homePageComponents/Info";
+import HowDoesItWork from "./homePageComponents/HowDoesItWork";
 
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-clip">
       <Banner />
       <About />
-      <Features />
+      <Info />
+      <HowDoesItWork />
     </main>
   );
 }

@@ -4,10 +4,12 @@ import { navigation } from "./components/Navigation";
 
 export default function Header(){
     return(
-        <header className="py-[15px]">
-            <nav className="w-4/5 mx-auto flex justify-between items-center">
-                <Link href="/">
-                    <Image src="/kursbu-logo.webp" width={200} height={200} />
+        <header className="w-full flex justify-center py-[15px]">
+            <nav className="w-4/5 flex justify-between items-center">
+                <Link href="/" className="block">
+                    <div>
+                        <img src="/kursbu-logo.webp" alt="logo" className=""  />
+                    </div>
                 </Link>
                 <ul className="flex items-center">
                     {navigation.map((navigations) => (

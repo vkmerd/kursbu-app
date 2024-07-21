@@ -20,25 +20,25 @@ export default function About() {
 
   return (
     <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-[60px]">
-      <div className="relative h-screen">
+      <div className="relative h-full lg:h-screen">
         <motion.img
           src="/about-01.png"
           alt=""
-          className="absolute top-0 left-0"
+          className="max-w-full hidden lg:block absolute top-0 left-0 max-w-none"
           animate={controls1}
           initial={{ x: -200 }} 
         />
         <motion.img
           src="/about-02.png"
           alt=""
-          className="absolute top-0 right-0"
+          className="max-w-full hidden lg:block absolute top-0 right-0 max-w-none"
           animate={controls2}
           initial={{ x: 200 }} 
         />
         <motion.img
           src="/about-03.png"
           alt=""
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+          className="max-w-full lg:absolute bottom-0 left-1/2 transform -translate-x-1/2 max-w-none"
           animate={controls3}
           initial={{ y: 200 }}
         />
