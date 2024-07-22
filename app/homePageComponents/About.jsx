@@ -1,10 +1,9 @@
 'use client';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, useScroll } from 'framer-motion';
 import { useEffect } from 'react';
-import { useViewportScroll } from 'framer-motion';
 
 export default function About() {
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const controls1 = useAnimation();
   const controls2 = useAnimation();
   const controls3 = useAnimation();

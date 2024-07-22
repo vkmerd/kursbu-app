@@ -22,7 +22,7 @@ export default function Features() {
     };
 
     return (
-        <div className="w-full bg-[#F0F2FF] grid justify-items-center py-[50px] bg-gradient" ref={ref}>
+        <div className="w-full bg-[#f0f2ff] grid justify-items-center py-[50px] bg-gradient" ref={ref}>
             <div className="w-4/5 grid grid-cols-1 items-center gap-[30px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                 <motion.div
                     initial="hidden"
