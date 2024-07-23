@@ -12,6 +12,10 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        custom: '1px 0px 20px rgba(0, 0, 0, 0.05)',
+        customHover: '1px 0px 60px rgba(0, 0, 0, 0.1)',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
       }
