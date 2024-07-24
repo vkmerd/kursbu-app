@@ -59,7 +59,7 @@ export default function EducationTabContainer() {
         {tabs.map(tabmenu => (
           <div
             key={tabmenu.id}
-            className={`min-w-[325px] max-w-[325px] flex-shrink-0 py-[10px] px-[20px] text-black text-[18px] text-center font-bold hover:bg-[#234DD4] rounded-[20px] ${activeTab === tabmenu.id ? 'bg-[#234DD4] scale-105 transition duration-300 text-white' : 'border-solid border-2 border-black text-black'}`}
+            className={`min-w-[325px] max-w-[325px] flex-shrink-0 py-[10px] px-[20px] text-black text-[18px] text-center border-solid border-2 border-black rounded-[20px] ${activeTab === tabmenu.id ? 'scale-105 transition duration-300 font-bold' : 'border-solid border-2 border-black text-black font-nomral'}`}
             onClick={() => handleCategoryTabClick(tabmenu.id)}
           >
             {tabmenu.head}
