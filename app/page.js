@@ -4,6 +4,7 @@ import Info from "./homePageComponents/Info";
 import HowDoesItWork from "./homePageComponents/HowDoesItWork";
 import EducationTabContainer from "./homePageComponents/EducationTabContainer";
 import StudentAndTeacher from "./homePageComponents/StudentAndTeacher";
+import Faq from "./homePageComponents/Faq";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HowDoesItWork />
       <EducationTabContainer />
       <StudentAndTeacher />
+      <Faq />
     </main>
   );
 }
