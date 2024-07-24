@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { useState, useReducer } from 'react';
+import { useState, useReducer,useRef } from 'react';
 import { categoryTabReducer, initialTabState,tabs } from '../components/CategoryTab';
 import Link from 'next/link';
 
@@ -14,11 +14,29 @@ export default function EducationTabContainer() {
     setActiveTab(tab);
   };
 
-
-
   const tabContentVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 }
+  };
+
+  const scrollContainerRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -300, 
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 300, 
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
@@ -27,15 +45,34 @@ export default function EducationTabContainer() {
       <div className="w-full flex justify-center py-[20px]">
         <div className="max-w-[1320px] flex flex-col gap-[20px]">
           <div>
-            <div className="flex flex-wrap justify-center gap-[15px] py-[15px]">
-            {tabs.map(tabmenu => (
-              <div key={tabmenu.id}
-                className={`py-[10px] px-[20px] text-white text-[18px] hover:bg-[#234DD4] rounded-[20px] ${activeTab === tabmenu.id ? 'bg-[#234DD4] scale-105 transition duration-300' : 'bg-[#ec605a]'}`}
-                onClick={() => handleCategoryTabClick(tabmenu.id)}>
-                {tabmenu.head}
-              </div>
-            ))}
-            </div>
+          <div className="relative flex items-center">
+      <button
+        className="absolute left-[-40px] z-10 p-2 bg-[#ec605a] rounded-full text-white hover:bg-gray-300"
+        onClick={scrollLeft}
+      >
+        ◀
+      </button>
+      <div
+        className="flex overflow-x-auto gap-[15px] py-[15px] custom-scrollbar"
+        ref={scrollContainerRef}
+      >
+        {tabs.map(tabmenu => (
+          <div
+            key={tabmenu.id}
+            className={`min-w-[325px] max-w-[325px] flex-shrink-0 py-[10px] px-[20px] text-black text-[18px] text-center font-bold hover:bg-[#234DD4] rounded-[20px] ${activeTab === tabmenu.id ? 'bg-[#234DD4] scale-105 transition duration-300 text-white' : 'border-solid border-2 border-black text-black'}`}
+            onClick={() => handleCategoryTabClick(tabmenu.id)}
+          >
+            {tabmenu.head}
+          </div>
+        ))}
+      </div>
+      <button
+        className="absolute right-[-40px] z-10 p-2 bg-[#ec605a] rounded-full text-white hover:bg-gray-300"
+        onClick={scrollRight}
+      >
+        ▶
+      </button>
+    </div>
           </div>
           <div className="w-full">
              {tabs.filter(tab => tab.id === activeTab).map(tab => (
