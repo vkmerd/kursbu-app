@@ -19,17 +19,8 @@ export default function StudentAndTeacher(){
                         <h2 className="text-4xl font-medium mt-[15px]">Öğrenci</h2>
                         <p className="text-xl py-[15px]">Öğrenci olarak Kaydolarak verilen eğitim hizmetlerinden faydalanabilir ve kendinizi istediğiniz alanda deneyimli eğitmenlerimizle geliştirebilirsiniz!</p>
                         <div className="flex mt-[20px] gap-[15px]">
-                            <Link href="/giris-kayit" className="w-1/2 py-[10px] px-[15px] text-xl text-white bg-[#99a2f9] flex justify-center items-center font-bold hover:bg-[#425c72] transition duration-300">
-                            <div className="mr-[15px]">
-                                <UserIcon />
-                            </div>
-                            Giriş Yap</Link>
-
-                            <Link href="/giris-kayit" className="w-1/2 py-[10px] px-[15px] text-xl text-white flex justify-center items-center font-bold bg-[#425c72] hover:bg-[#99a2f9] transition duration-300">
-                            <div className="mr-[15px]">
-                                <Register />
-                            </div>
-                            Kayıt Ol</Link>
+                            <Link href="/giris-kayit" className="w-full py-[5px] px-[10px] text-xl text-white bg-[#0f24ea] flex justify-center items-center hover:bg-[#5e4cf7] transition duration-300">
+                            Öğrenci Ol</Link>
                             <Link href="/giris-kayit">
                                 <GoogleIcon />
                             </Link>
@@ -40,17 +31,8 @@ export default function StudentAndTeacher(){
                         <h2 className="text-4xl font-medium mt-[15px]">Öğretmen</h2>
                         <p className="text-xl py-[15px]">Öğrenci olarak Kaydolarak verilen eğitim hizmetlerinden faydalanabilir ve kendinizi istediğiniz alanda deneyimli eğitmenlerimizle geliştirebilirsiniz!</p>
                         <div className="flex mt-[20px] gap-[15px]">
-                            <Link href="/giris-kayit" className="w-1/2 py-[10px] px-[15px] text-xl text-white bg-[#99a2f9] flex justify-center items-center font-bold hover:bg-[#425c72] transition duration-300">
-                            <div className="mr-[15px]">
-                                <UserIcon />
-                            </div>
-                            Giriş Yap</Link>
-
-                            <Link href="/giris-kayit" className="w-1/2 py-[10px] px-[15px] text-xl text-white flex justify-center items-center font-bold bg-[#425c72] hover:bg-[#99a2f9] transition duration-300">
-                            <div className="mr-[15px]">
-                                <Register />
-                            </div>
-                            Kayıt Ol</Link>
+                        <Link href="/giris-kayit" className="w-full py-[5px] px-[10px] text-xl text-white bg-[#0f24ea] flex justify-center items-center hover:bg-[#5e4cf7] transition duration-300">
+                        Öğretmen Ol</Link>
                             <Link href="/giris-kayit">
                                 <GoogleIcon />
                             </Link>

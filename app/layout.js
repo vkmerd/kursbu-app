@@ -1,5 +1,7 @@
+import Footer from './Footer';
 import './globals.css'
 import Header from './Header';
+
 export const metadata = {
   title: "Kursbu - Online Özel Ders Platformu",
   description: "Kursbu - Online Özel Ders Platformu",
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className="font-poppins">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -6,20 +6,38 @@ import { motion } from "framer-motion";
 export default function Faq() {
     const faqsData = [
         {
-            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam magnam explicabo deserunt labore repudiandae.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita, saepe reiciendis ex nemo voluptas harum voluptate. Dicta eaque molestiae porro odit. Deleniti assumenda corrupti odit mollitia officiis temporibus corporis?"
+            title: "Kursbu.com nedir?",
+            desc: "Kursbu.com, öğretmenlerin ilan verebildiği, öğrencilerin ders talebinde bulunabildiği ve kendi aradıkları dersleri ilan olarak yayınlayabildikleri bir online özel ders platformudur. "
         },
         {
-            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam magnam explicabo deserunt labore repudiandae.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita, saepe reiciendis ex nemo voluptas harum voluptate. Dicta eaque molestiae porro odit. Deleniti assumenda corrupti odit mollitia officiis temporibus corporis?"
+            title: "Öğretmenler Kursbu.com'da nasıl ilan verebilir?",
+            desc: "Öğretmenler, siteye üye olduktan sonra hesaplarına giriş yaparak “İlan Ver” butonuna tıklayabilir ve ders verecekleri konularla ilgili ilan oluşturabilirler."
         },
         {
-            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam magnam explicabo deserunt labore repudiandae.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita, saepe reiciendis ex nemo voluptas harum voluptate. Dicta eaque molestiae porro odit. Deleniti assumenda corrupti odit mollitia officiis temporibus corporis?"
+            title: "Öğrenciler nasıl ders talebinde bulunabilir?",
+            desc: "Öğrenciler, istedikleri ders konusuyla ilgili talep oluşturmak için siteye üye olmalı ve “Ders Talebi Oluştur” butonuna tıklayarak ihtiyaçlarını belirtmelidirler. Ayrıca, mevcut öğretmen ilanlarına başvurarak ders talebinde de bulunabilirler."
         },
         {
-            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam magnam explicabo deserunt labore repudiandae.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem expedita, saepe reiciendis ex nemo voluptas harum voluptate. Dicta eaque molestiae porro odit. Deleniti assumenda corrupti odit mollitia officiis temporibus corporis?"
+            title: "Öğrenciler aradıkları dersleri nasıl bulabilir?",
+            desc: "Öğrenciler, arama bölümüne ilgilendikleri ders konusunu yazarak mevcut ilanları inceleyebilir veya kendi taleplerini ilan olarak yayınlayabilirler."
+        },
+
+
+        {
+            title: "Öğretmenler öğrencilere nasıl ulaşır?",
+            desc: "Öğrenciler tarafından yayınlanan ders talepleri öğretmenler tarafından görüntülenebilir. Uygun öğretmenler, öğrenciye mesaj göndererek veya ilanlarına başvurarak iletişime geçebilirler."
+        },
+        {
+            title: "İlan vermek ve talep oluşturmak ücretli midir?",
+            desc: "Platformda ilan vermek ve ders talebi oluşturmak, bazı ek hizmetler veya öne çıkarma seçenekleri ücretli olabilir. Detaylar için ücretlendirme sayfasını ziyaret edebilirsiniz."
+        },
+        {
+            title: "Bir sorun yaşadığımda nasıl destek alabilirim?",
+            desc: "Herhangi bir sorun yaşarsanız, destek ekibimizle iletişime geçmek için “İletişim” sayfasındaki formu doldurabilir veya destek@kursbu.com adresine e-posta gönderebilirsiniz."
+        },
+        {
+            title: "Ders iptali veya değişikliği nasıl yapılır?",
+            desc: "Ders iptali veya tarih değişikliği için doğrudan karşı tarafla iletişime geçmeniz gerekmektedir. Karşılıklı olarak anlaşarak yeni bir tarih belirleyebilirsiniz."
         }
     ];
 

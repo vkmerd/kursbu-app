@@ -47,7 +47,7 @@ export default function About() {
         <div className="mt-[25px]">
             <h2 className="text-6xl font-bold">Know About Histudy
             Learning Platform</h2>
-            <p className="mt-[20px] text-[#1c1c1c] text-2xl">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            <p className="mt-[20px] text-[#1c1c1c] text-2xl">Kursbu, öğrencilerin akademik ihtiyaçlarının yanı sıra, psikolojik ve sağlık desteklerine, kişisel gelişimlerine ve kariyer planlamalarına yönelik kapsamlı bir destek sağlar.
             </p>
             <div className="mt-[25px]">
                 <div className="flex items-center py-[35px] px-[40px] bg-[#f5fafc]">

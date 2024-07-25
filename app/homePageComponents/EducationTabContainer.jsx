@@ -53,7 +53,7 @@ export default function EducationTabContainer() {
         ◀
       </button>
       <div
-        className="flex overflow-x-auto gap-[15px] py-[15px] custom-scrollbar"
+        className="flex overflow-x-auto gap-[15px] py-[15px] px-[10px] custom-scrollbar"
         ref={scrollContainerRef}
       >
         {tabs.map(tabmenu => (
