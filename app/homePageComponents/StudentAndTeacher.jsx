@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { SmileBg, EyeBg, UserIcon, Register } from "../components/Svgs"
+import { GoogleIcon, UserIcon, Register } from "../components/Svgs"
 
 
 
@@ -15,9 +15,7 @@ export default function StudentAndTeacher(){
                 </div>
                 <div className="max-w-[1320px] grid grid-cols-1 gap-[35px] mx-auto md:grid-cols-2">
 
-                    <div className="relative bg-white overflow-hidden py-[30px] px-[20px]">
-                        <SmileBg />
-                        <img src="/box-bg-image.png" alt="boxbg" className="absolute md768:w-[593px] w-[344px] md768:min-h-[497px] min-h-[294px] md768:max-h-[497px] max-h-[294px] md768:-top-[208px] -top-[101px] md992:-right-[200px] md768:-right-[88px] -right-[92px] object-contain" />
+                    <div className="bg-white rounded-[20px] py-[30px] px-[20px]">
                         <h2 className="text-4xl font-medium mt-[15px]">Öğrenci</h2>
                         <p className="text-xl py-[15px]">Öğrenci olarak Kaydolarak verilen eğitim hizmetlerinden faydalanabilir ve kendinizi istediğiniz alanda deneyimli eğitmenlerimizle geliştirebilirsiniz!</p>
                         <div className="flex mt-[20px] gap-[15px]">
@@ -32,12 +30,13 @@ export default function StudentAndTeacher(){
                                 <Register />
                             </div>
                             Kayıt Ol</Link>
+                            <Link href="/giris-kayit">
+                                <GoogleIcon />
+                            </Link>
                         </div>
                     </div>
                     
-                    <div className="relative bg-white overflow-hidden py-[30px] px-[20px]">
-                        <EyeBg />
-                        <img src="/box-bg-image.png" alt="boxbg" className="absolute md768:w-[593px] w-[344px] md768:min-h-[497px] min-h-[294px] md768:max-h-[497px] max-h-[294px] md768:-top-[208px] -top-[101px] md992:-right-[200px] md768:-right-[88px] -right-[92px] object-contain" />
+                    <div className="relative bg-white rounded-[20px] py-[30px] px-[20px]">
                         <h2 className="text-4xl font-medium mt-[15px]">Öğretmen</h2>
                         <p className="text-xl py-[15px]">Öğrenci olarak Kaydolarak verilen eğitim hizmetlerinden faydalanabilir ve kendinizi istediğiniz alanda deneyimli eğitmenlerimizle geliştirebilirsiniz!</p>
                         <div className="flex mt-[20px] gap-[15px]">
@@ -52,6 +51,9 @@ export default function StudentAndTeacher(){
                                 <Register />
                             </div>
                             Kayıt Ol</Link>
+                            <Link href="/giris-kayit">
+                                <GoogleIcon />
+                            </Link>
                         </div>
                     </div>
 
