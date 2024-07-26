@@ -34,7 +34,6 @@ export default function Header(){
                       <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Blog</Link>
                       <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Arkadaşını davet et</Link>
                       <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Yardım ve Destek</Link>
-                      <button className="bg-[#234DD4] py-[10px] px-[15px] mt-[15px] text-white rounded-[20px] hover:bg-[#ffc44d] transition duration-300">+ Özel Ders Ver!</button>
                   </ul>
                 </div>
                 <button className="w-[40px] h-[40px] text-white bg-[#000] text-xl rounded-full ml-[30px] mt-[60px]" onClick={() => setMobileMenu(false)}>X</button>
