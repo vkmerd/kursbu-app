@@ -17,23 +17,24 @@ export default function Header(){
                     </div>
                 </Link>
                   <ul className="flex flex-col mt-5 gap-[10px] h-full overflow-y-scroll">
-                      <Link href="/oturum-ac" className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">+ Oturum Aç</Link>
-                      <Link href="/kayit-ol" className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">+ Kayıt Ol</Link>
+                      <Link href="/oturum-ac" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Oturum Aç</Link>
+                      <Link href="/kayit-ol" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Kayıt Ol</Link>
 
                       <hr />
-                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">+ Bir Eğitmen Bul</Link>
+                      <Link href="/bir-egitmen-bul" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Bir Eğitmen Bul</Link>
                       <hr />
+                      <h3 className="text-xl font-bold mt-[10px]">En Popüler</h3>
                       {
                         educationNavigation.map((educationTitle,index) => (
-                            <li key={index} className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">
+                            <li key={index} className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">
                                {educationTitle.link} 
                             </li>
                         ))
                       }
                       <h3 className="text-xl font-bold">Diğer Hizmetler</h3>
-                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Blog</Link>
-                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Arkadaşını davet et</Link>
-                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Yardım ve Destek</Link>
+                      <Link href="/bir-egitmen-bul" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">Blog</Link>
+                      <Link href="/bir-egitmen-bul" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">Arkadaşını davet et</Link>
+                      <Link href="/bir-egitmen-bul" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">Yardım ve Destek</Link>
                   </ul>
                 </div>
                 <button className="w-[40px] h-[40px] text-white bg-[#000] text-xl rounded-full ml-[30px] mt-[60px]" onClick={() => setMobileMenu(false)}>X</button>
