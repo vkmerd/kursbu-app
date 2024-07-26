@@ -25,7 +25,7 @@ export default function Header(){
                       <hr />
                       {
                         educationNavigation.map((educationTitle,index) => (
-                            <li className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">
+                            <li key={index} className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">
                                {educationTitle.link} 
                             </li>
                         ))
