@@ -21,23 +21,23 @@ export default function EducationTabContainer() {
 
   const scrollContainerRef = useRef(null);
 
-  const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: -300, 
-        behavior: 'smooth',
-      });
-    }
-  };
+  // const scrollLeft = () => {
+  //   if (scrollContainerRef.current) {
+  //     scrollContainerRef.current.scrollBy({
+  //       left: -300, 
+  //       behavior: 'smooth',
+  //     });
+  //   }
+  // };
 
-  const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: 300, 
-        behavior: 'smooth',
-      });
-    }
-  };
+  // const scrollRight = () => {
+  //   if (scrollContainerRef.current) {
+  //     scrollContainerRef.current.scrollBy({
+  //       left: 300, 
+  //       behavior: 'smooth',
+  //     });
+  //   }
+  // };
 
   return (
     <div className='py-[60px]'>
@@ -45,12 +45,6 @@ export default function EducationTabContainer() {
     <div className="w-full flex justify-center py-[20px] px-[10px] md:px-0">
       <div className="w-5/6 flex flex-col gap-[20px] md:w-4/6">
         <div className="relative flex items-center">
-          <button
-            className="absolute left-[-20px] md:left-[-40px] z-10 p-2 bg-[#ec605a] rounded-full text-white hover:bg-gray-300"
-            onClick={scrollLeft}
-          >
-            ◀
-          </button>
           <div
             className="flex overflow-x-auto gap-[10px] py-[15px] px-[5px] md:px-[10px] custom-scrollbar"
             ref={scrollContainerRef}
@@ -65,12 +59,6 @@ export default function EducationTabContainer() {
               </div>
             ))}
           </div>
-          <button
-            className="absolute right-[-20px] md:right-[-40px] z-10 p-2 bg-[#ec605a] rounded-full text-white hover:bg-gray-300"
-            onClick={scrollRight}
-          >
-            ▶
-          </button>
         </div>
           {tabs.filter(tab => tab.id === activeTab).map(tab => (
             <div key={tab.id} className="grid grid-cols-1 gap-[20px] md:grid-cols-2 lg:grid-cols-3">
