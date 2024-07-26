@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link";
-import { navigation } from "./components/Navigation";
+import { educationNavigation, navigation } from "./components/Navigation";
 import { useState } from "react";
+
+
 
 export default function Header(){
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -14,12 +16,24 @@ export default function Header(){
                         <img src="/kursbu-logo.webp" alt="logo" className="max-w-full"  />
                     </div>
                 </Link>
-                  <ul className="flex flex-col mt-5">
-                      {navigation.map((navigations) => (
-                          <li key={navigations.navid} className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">
-                              {navigations.link}
-                          </li>
-                      ))}
+                  <ul className="flex flex-col mt-5 gap-[10px]">
+                      <Link href="/oturum-ac" className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">+ Oturum Aç</Link>
+                      <Link href="/kayit-ol" className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">+ Kayıt Ol</Link>
+
+                      <hr />
+                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">+ Bir Eğitmen Bul</Link>
+                      <hr />
+                      {
+                        educationNavigation.map((educationTitle,index) => (
+                            <li className="py-2 text-[15px] text-black hover:opacity-50 transition duration-300">
+                               {educationTitle.link} 
+                            </li>
+                        ))
+                      }
+                      <h3 className="text-xl font-bold">Diğer Hizmetler</h3>
+                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Blog</Link>
+                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Arkadaşını davet et</Link>
+                      <Link href="/bir-egitmen-bul" className="py-2 text-[15px] text-black mb-[10px] hover:opacity-50 transition duration-300">Yardım ve Destek</Link>
                       <button className="bg-[#234DD4] py-[10px] px-[15px] mt-[15px] text-white rounded-[20px] hover:bg-[#ffc44d] transition duration-300">+ Özel Ders Ver!</button>
                   </ul>
                 </div>
