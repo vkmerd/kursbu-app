@@ -45,7 +45,7 @@ export default function About() {
       <div className="lg:ml-[40px]">
         <button className="inline-block	bg-[#E9967A] py-[10px] px-[15px] text-white text-[20px] rounded-[20px] hover:bg-[#000] transition duration-300">Know About Us</button>
         <div className="mt-[25px]">
-            <h2 className="font-bold text-3xl lg:text-6xl">Know About Histudy
+            <h2 className="font-bold text-3xl lg:text-6xl">Sizi anlayan öğrenim deneyimi!
             Learning Platform</h2>
             <p className="text-lg mt-[20px] text-[#1c1c1c] lg:text-2xl">Kursbu, öğrencilerin akademik ihtiyaçlarının yanı sıra, psikolojik ve sağlık desteklerine, kişisel gelişimlerine ve kariyer planlamalarına yönelik kapsamlı bir destek sağlar.
             </p>
@@ -53,9 +53,9 @@ export default function About() {
                 <div className="flex flex-col items-start py-[10px] px-[5px] bg-[#f5fafc] gap-[15px] md:gap-[0px] md:flex-row md:items-center md:justify-center md:py-[35px] md:px-[40px]">
                   <img src="/seffaflik-saglar.png" alt="" />
                   <div className="flex flex-col lg:ml-[15px]">
-                    <h2 className="text-2xl">Declare your goal!</h2>
+                    <h2 className="text-2xl">Liderlik</h2>
                     <p className="text-lg mt-[10px] md:text-xl">
-                      Declare your goal by knowing what you are working for and how you will contribute! Build your team in seconds.
+                    Liderlik, iletişim ve diğer kişisel becerilerin geliştirilmesine yönelik çeşitli atölye ve seminerler düzenler.
                     </p>
                   </div>
                 </div>
@@ -63,9 +63,9 @@ export default function About() {
                 <div className="flex flex-col items-start py-[10px] px-[5px] bg-[#fdf1f0] mt-[20px] gap-[15px] md:gap-[0px] md:flex-row md:items-center md:justify-center md:py-[35px] md:px-[40px]">
                     <img src="/stratejiye-odaklar.png" alt="" />
                     <div className="flex-col lg:ml-[15px]">
-                        <h2 className="text-2xl">Declare your goal!</h2>
+                        <h2 className="text-2xl">Topluluk</h2>
                         <p className="text-lg mt-[10px] md:text-xl">
-                            Declare your goal by knowing what you are working for and how you will contribute! Build your team in seconds.
+                        Öğrencilerin, öğretmenlerin ve uzmanların bir araya gelerek bilgi ve deneyim paylaşabilecekleri aktif bir topluluk.
                         </p>
                     </div>
                 </div>

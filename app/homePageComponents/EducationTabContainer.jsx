@@ -41,7 +41,7 @@ export default function EducationTabContainer() {
 
   return (
     <div className='py-[60px]'>
-    <h2 className="text-3xl text-center text-[#234DD4] font-bold md?text-4xl">Hizmet Kategorilerimiz</h2>
+    <h2 className="text-3xl text-center text-[#234DD4] font-bold md?text-4xl">Kategoriye Göre Öne Çıkan Konular</h2>
     <div className="w-full flex justify-center py-[20px] px-[10px] md:px-0">
       <div className="w-5/6 flex flex-col gap-[20px] md:w-4/6">
         <div className="relative flex items-center">
