@@ -12,7 +12,7 @@ export const categoryTabReducer = (state, action) => {
   };
   
 
-  export   const tabs = [
+  export const tabs = [
     { id: 'Tab1', head:"Akademik Destek", label: [
         {   
             img:'/ayse.jpg',
