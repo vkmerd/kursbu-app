@@ -46,7 +46,7 @@ export default function About() {
         <button className="inline-block	bg-[#E9967A] py-[10px] px-[15px] text-white text-[20px] rounded-[20px] hover:bg-[#000] transition duration-300">Know About Us</button>
         <div className="mt-[25px]">
             <h2 className="font-bold text-3xl lg:text-6xl">Sizi anlayan öğrenim deneyimi!
-            Learning Platform</h2>
+            </h2>
             <p className="text-lg mt-[20px] text-[#1c1c1c] lg:text-2xl">Kursbu, öğrencilerin akademik ihtiyaçlarının yanı sıra, psikolojik ve sağlık desteklerine, kişisel gelişimlerine ve kariyer planlamalarına yönelik kapsamlı bir destek sağlar.
             </p>
             <div className="mt-[25px]">
