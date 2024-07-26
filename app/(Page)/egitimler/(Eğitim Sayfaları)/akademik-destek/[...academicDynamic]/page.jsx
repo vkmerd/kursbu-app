@@ -43,6 +43,6 @@ export default function AcademicLesson({ params }) {
 
 export async function generateStaticParams() {
     return Object.keys(lessonContent).map(key => ({
-        academicDynamic: key
+        academicDynamic: [key]
     }));
 }
