@@ -74,6 +74,26 @@ export const categoryTabReducer = (state, action) => {
             price:"660 TL / Saat",
             link:"/egitim-danismanlari/omer-handan"
         },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
     ]
 },
     
@@ -139,10 +159,50 @@ export const categoryTabReducer = (state, action) => {
         price:"660 TL / Saat",
         link:"/egitim-danismanlari/omer-handan"
     },
+    {   
+        img:'/ayse.jpg',
+        title: "Matematik Öğretmeni",
+        desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+        name:"Ayşe D.",
+        location:"İzmir / Bayraklı",
+        comments:"6 yorum",
+        price:"600 TL / Saat",
+        link:"/egitim-danismanlari/ayse-has"
+    },
+    {
+        img:'/omer.jpg',
+        title: "Eğitimci Mühendis",
+        desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+        name:"Buğra H.",
+        location:"Ankara / Mamak",
+        comments:"34 yorum",
+        price:"660 TL / Saat",
+        link:"/egitim-danismanlari/omer-handan"
+    },
 ]
 },
 
-    { id: 'Tab3', head:"Sanat ve Yaratıcılık",  label: [
+    { id: 'Tab3', head:"Sanat ve Yaratıcılık", label: [
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
         {   
             img:'/ayse.jpg',
             title: "Matematik Öğretmeni",
@@ -266,50 +326,6 @@ export const categoryTabReducer = (state, action) => {
             price:"660 TL / Saat",
             link:"/egitim-danismanlari/omer-handan"
         },
-    ]
-
-},
-    { id: 'Tab5',head:"Sınav Hazırlık Kursları", label:[
-        {   
-            img:'/ayse.jpg',
-            title: "Matematik Öğretmeni",
-            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
-            name:"Ayşe D.",
-            location:"İzmir / Bayraklı",
-            comments:"6 yorum",
-            price:"600 TL / Saat",
-            link:"/egitim-danismanlari/ayse-has"
-        },
-        {
-            img:'/omer.jpg',
-            title: "Eğitimci Mühendis",
-            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
-            name:"Buğra H.",
-            location:"Ankara / Mamak",
-            comments:"34 yorum",
-            price:"660 TL / Saat",
-            link:"/egitim-danismanlari/omer-handan"
-        },
-        {   
-            img:'/ayse.jpg',
-            title: "Matematik Öğretmeni",
-            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
-            name:"Ayşe D.",
-            location:"İzmir / Bayraklı",
-            comments:"6 yorum",
-            price:"600 TL / Saat",
-            link:"/egitim-danismanlari/ayse-has"
-        },
-        {
-            img:'/omer.jpg',
-            title: "Eğitimci Mühendis",
-            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
-            name:"Buğra H.",
-            location:"Ankara / Mamak",
-            comments:"34 yorum",
-            price:"660 TL / Saat",
-            link:"/egitim-danismanlari/omer-handan"
-        },
         {   
             img:'/ayse.jpg',
             title: "Matematik Öğretmeni",
@@ -332,7 +348,110 @@ export const categoryTabReducer = (state, action) => {
         },
     ]
 },
-    { id: 'Tab6', head:"Spor ve Fiziksel Aktivite", label:[
+    { id: 'Tab5',head:"Sınav Hazırlık Kursları", label: [
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
+    ]
+},
+    { id: 'Tab6', head:"Spor ve Fiziksel Aktivite", label: [
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
         {   
             img:'/ayse.jpg',
             title: "Matematik Öğretmeni",
@@ -456,6 +575,26 @@ export const categoryTabReducer = (state, action) => {
             price:"660 TL / Saat",
             link:"/egitim-danismanlari/omer-handan"
         },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
     ]
 },
     { id: 'Tab8',  head:"Kişisel Gelişim ve Beceriler",  label: [
@@ -519,8 +658,48 @@ export const categoryTabReducer = (state, action) => {
             price:"660 TL / Saat",
             link:"/egitim-danismanlari/omer-handan"
         },
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
     ]},
     { id: 'Tab9', head:"Kariyer ve Gelecek Planlama", label: [
+        {   
+            img:'/ayse.jpg',
+            title: "Matematik Öğretmeni",
+            desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
+            name:"Ayşe D.",
+            location:"İzmir / Bayraklı",
+            comments:"6 yorum",
+            price:"600 TL / Saat",
+            link:"/egitim-danismanlari/ayse-has"
+        },
+        {
+            img:'/omer.jpg',
+            title: "Eğitimci Mühendis",
+            desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
+            name:"Buğra H.",
+            location:"Ankara / Mamak",
+            comments:"34 yorum",
+            price:"660 TL / Saat",
+            link:"/egitim-danismanlari/omer-handan"
+        },
         {   
             img:'/ayse.jpg',
             title: "Matematik Öğretmeni",

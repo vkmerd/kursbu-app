@@ -5,16 +5,16 @@ import HowDoesItWork from "./homePageComponents/HowDoesItWork";
 import EducationTabContainer from "./homePageComponents/EducationTabContainer";
 import StudentAndTeacher from "./homePageComponents/StudentAndTeacher";
 import Faq from "./homePageComponents/Faq";
-
+import Companys from "./homePageComponents/Companys";
 
 export default function Home() {
   return (
     <main className="overflow-x-clip">
       <Banner />
-      <About />
-      <Info />
       <HowDoesItWork />
+      <Info />
       <EducationTabContainer />
+      <Companys />
       <StudentAndTeacher />
       <Faq />
     </main>

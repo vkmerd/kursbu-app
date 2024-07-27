@@ -50,13 +50,13 @@ export default function Faq() {
     return (
         <>
             <div className="w-full py-[60px] relative">
-                <img src="/cta-left.png" className="absolute hidden lg:inline left-[-20%]" />
-                <img src="/cta-right.png" className="absolute hidden lg:inline right-[-20%]" />
+                <img src="/cta-left.png" className="absolute hidden lg:inline left-[-20%] z-0" />
+                <img src="/cta-right.png" className="absolute hidden lg:inline right-[-20%] z-0" />
                 <div className="max-w-[1320px] mx-auto">
                     <h2 className="text-4xl text-center py-[35px] text-[#0f24ea] font-bold">Sık Sorulan Sorular!</h2>
                     <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <img src="/faq.jpg" className="max-w-full" />
-                        <div className="boxs">
+                        <img src="/faq.jpg" className="max-w-full lg:z-0" />
+                        <div className="z-10">
                         {faqsData.map((faq, index) => (
                             <div key={index} className="mb-4">
                                 <button

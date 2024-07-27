@@ -3,9 +3,11 @@
 export default function HowDoesItWork(){
   
     return(
-        <div className="w-full grid justify-items-center py-[60px]">
-            <h2 className="text-4xl text-[#234DD4] text-left font-bold relative">Kursbu Nasıl Çalışır?</h2>
-            <div className="w-4/5 grid grid-cols-1 relative mt-[100px] gap-[30px] lg:grid-cols-3 md:grid-cols-2 mt-[30px]">
+        <div className="w-full py-[60px]">
+            <div className="w-4/5 mx-auto">
+                <h2 className="text-4xl text-[#234DD4] text-left font-bold relative">Kursbu Nasıl Çalışır?</h2>
+            </div>
+            <div className="w-4/5 grid grid-cols-1 justify-items-center mx-auto relative mt-[100px] gap-[30px] lg:grid-cols-3 md:grid-cols-2 mt-[30px]">
                 <div className="flex flex-col items-start border-solid border-2 border-black py-[35px] px-[20px] mt-[50px] relative ">
                     <span className="block text-2xl bg-[#7bead6] py-[5px] px-[10px] text-black font-bold mb-[30px]">1</span>
                     <div className="flex-col text-left">

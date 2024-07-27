@@ -40,10 +40,9 @@ export default function EducationTabContainer() {
   // };
 
   return (
-    <div className='py-[60px]'>
+  <div className='w-full py-[60px]'>
     <h2 className="text-3xl text-center text-[#234DD4] font-bold md?text-4xl">Kategoriye Göre Öne Çıkan Konular</h2>
-    <div className="w-full flex justify-center py-[20px] px-[10px] md:px-0">
-      <div className="w-5/6 flex flex-col gap-[20px] md:w-4/6">
+    <div className="w-full mx-auto py-[20px] px-[10px] md:px-0 md:w-5/6">
         <div className="relative flex items-center">
           <div
             className="flex overflow-x-auto gap-[10px] py-[15px] px-[5px] md:px-[10px] custom-scrollbar"
@@ -61,7 +60,7 @@ export default function EducationTabContainer() {
           </div>
         </div>
           {tabs.filter(tab => tab.id === activeTab).map(tab => (
-            <div key={tab.id} className="grid grid-cols-1 gap-[20px] md:grid-cols-2 lg:grid-cols-3">
+            <div key={tab.id} className="grid grid-cols-1 gap-[20px] mt-[25px] md:grid-cols-2 lg:grid-cols-4">
               {tab.label.map((labelItem, index) => (
                 <div key={index}>
                   <motion.div
@@ -89,7 +88,9 @@ export default function EducationTabContainer() {
               ))}
             </div>
           ))}
-      </div>
+          <div className="flex justify-center mt-[25px]">
+              <button className="bg-[#ff6363] py-[15px] px-[25px] text-white font-semibold">Daha Fazla öğretmen Gör! </button>
+          </div>
     </div>
   </div>  
   );
