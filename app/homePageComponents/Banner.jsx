@@ -27,8 +27,8 @@ export default function Banner(){
         animate={{ opacity: "1", translateY: "0px" }} 
         className="adasd mb-8 md:mb-0"
       > 
-        <h2 className="text-[25px] md:text-6xl text-wrap leading-tight">
-        Uzman öğretmenlerle geleceğinizi şekillendirin. Profilinizi oluşturun, başarıya adım atın!
+        <h2 className="font-bold text-4xl lg:text-6xl">
+         Profilinizi oluşturun, başarıya adım atın!
         </h2>
         <div className="mt-[25px] flex md:flex-row items-center gap-4">
           <button className="bg-[#234DD4] py-[15px] px-[20px] text-md lg:text-2xl text-white rounded-[15px] flex py-[15px] px-[25px] hover:bg-[#000] transition duration-300">

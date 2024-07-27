@@ -16,7 +16,7 @@ export default function Header(){
                         <img src="/kursbu-logo.webp" alt="logo" className="max-w-full"  />
                     </div>
                 </Link>
-                  <ul className="flex flex-col mt-5 gap-[10px] h-full overflow-y-scroll">
+                  <ul className="flex flex-col mt-5 gap-[10px] overflow-y-scroll">
                       <Link href="/oturum-ac" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Oturum Aç</Link>
                       <Link href="/kayit-ol" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Kayıt Ol</Link>
 
