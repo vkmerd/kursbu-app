@@ -30,8 +30,7 @@ export default function Features() {
                     variants={variants}
                     className="flex-col ml-[15px]"
                 >
-                    <h2 className="text-2xl font-bold text-center">40.000+</h2>
-                    <p className="text-xl mt-[10px] text-center">Deneyimli öğretmen</p>
+                    <p className="text-xl mt-[10px] text-center">Uzman Eğitmen</p>
                 </motion.div>
                 <motion.div
                     initial="hidden"
@@ -39,8 +38,7 @@ export default function Features() {
                     variants={variants}
                     className="flex-col ml-[15px]"
                 >
-                    <h2 className="text-2xl font-bold text-center">300.000+</h2>
-                    <p className="text-xl mt-[10px] text-center">5 yıldızlı öğretmen puanlaması</p>
+                    <p className="text-xl mt-[10px] text-center">Eğitmen Puanlaması</p>
                 </motion.div>
                 <motion.div
                     initial="hidden"
@@ -48,8 +46,7 @@ export default function Features() {
                     variants={variants}
                     className="flex-col ml-[15px]"
                 >
-                    <h2 className="text-2xl font-bold text-center">120+</h2>
-                    <p className="text-xl mt-[10px] text-center">Ders konusu</p>
+                    <p className="text-xl mt-[10px] text-center">Ders Alanı</p>
                 </motion.div>
                 <motion.div
                     initial="hidden"
@@ -57,17 +54,7 @@ export default function Features() {
                     variants={variants}
                     className="flex-col ml-[15px]"
                 >
-                    <h2 className="text-2xl font-bold text-center">180+</h2>
-                    <p className="text-xl mt-[10px] text-center">Milletten öğretmen</p>
-                </motion.div>
-                <motion.div
-                    initial="hidden"
-                    animate={controls}
-                    variants={variants}
-                    className="flex-col ml-[15px]"
-                >
-                    <h2 className="text-2xl font-bold text-center">4,8</h2>
-                    <p className="text-xl mt-[10px] text-center">App Store Puanı</p>
+                    <p className="text-xl mt-[10px] text-center">Ders Konusu</p>
                 </motion.div>
             </div>
         </div>
