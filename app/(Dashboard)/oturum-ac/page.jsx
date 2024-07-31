@@ -4,7 +4,7 @@ export default function Login(){
      <div className="w-full h-screen bg-[#635fc7] flex justify-center items-center">
         <div className="w-[1320px] h-[60vh] bg-white rounded-3xl p-[30px] flex flex-col items-center shadow-2xl sm:flex-row h-[60vh]">
             <div className="loginForm basis-2/4">
-                <h2 className="text-2xl font-bold font-poppins">Kursbu App'e Hoş Geldiniz!</h2>
+                <h2 className="text-2xl font-bold font-poppins">Kursbu App Platformuna Hoş Geldiniz!</h2>
                     <div className="mt-[40px]">
                         <h2 className="text-3xl">Oturum Aç</h2>
                         <form className="w-full flex flex-col gap-[15px] mt-[20px] sm:w-2/3">
