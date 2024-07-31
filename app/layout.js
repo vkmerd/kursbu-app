@@ -1,6 +1,6 @@
-import Footer from './Footer';
+import SvgSymbol from './components/SvgSymbol';
 import './globals.css'
-import Header from './Header';
+
 
 export const metadata = {
   title: "Kursbu - Online Özel Ders Platformu",
@@ -18,9 +18,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" /> 
       </head>
       <body className="font-poppins">
-        <Header />
+        <SvgSymbol />
         {children}
-        <Footer />
       </body>
     </html>
   );

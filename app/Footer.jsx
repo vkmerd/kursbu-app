@@ -5,7 +5,7 @@ import { selfImprovement } from "./(Page)/egitimler/(Eğitim Sayfaları)/kisisel
 import { healthPageObj } from "./(Page)/egitimler/(Eğitim Sayfaları)/saglik-ve-psikolojik-destek/[healthdynamic]/page";
 import { artPageObj } from "./(Page)/egitimler/(Eğitim Sayfaları)/sanat-ve-yaraticilik/[artdynamic]/page";
 import { examPageObj } from "./(Page)/egitimler/(Eğitim Sayfaları)/sinav-hazirlik-kurslari/[examdynamic]/page";
-
+import { InstagramIcon } from "./components/Svgs";
 
 export default function Footer(){
     const lessonNavigation = {
@@ -42,6 +42,23 @@ export default function Footer(){
                                 <img src="/kursbu-logo.webp" alt="logo" className=""  />
                             </Link>
                             <p className="text-lg mt-[20px]">Kursbu, öğretmenlerin eğitim hizmetlerini, öğrencilerin ise eğitim ihtiyaçlarını en iyi şekilde karşılamaya çalışan bir platformdur.</p>
+                            <div className="flex gap-[10px] mt-[25px]">
+                                    <a href="https://www.facebook.com/kursbucom" target="_blank" className="p-[10px] bg-[#d1a8f9] rounded-[15px] hover:opacity-50 transition duration-300">
+                                        <svg className="w-[25px] h-[25px]">
+                                            <use href="#facebook" className="text-[#7c0000] hover:opacity-50 transition duration-300" target="_blank" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/kursbucom" className="p-[10px] bg-[#d1a8f9] rounded-[15px] hover:opacity-50 transition duration-300" target="_blank">
+                                        <svg className="w-[25px] h-[25px]">
+                                            <use href="#instagram" className="text-[#7c0000]" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://x.com/kursbucomm" className="p-[10px] bg-[#d1a8f9] rounded-[15px] hover:opacity-50 transition duration-300" target="_blank">
+                                        <svg className="w-[25px] h-[25px]">
+                                            <use href="#twitter-x" className="text-[#7c0000]" />
+                                        </svg>
+                                    </a>
+                            </div>
                         </div>
                         <div>
                             <h3 className="font-bold text-xl">Menü</h3>

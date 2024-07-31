@@ -1,7 +1,7 @@
 export default function Faq(){
     return(
-        <>
-            Soru-cevap sayfası
+        <>        
+            sık sorulan sorular
         </>
     )
 }
