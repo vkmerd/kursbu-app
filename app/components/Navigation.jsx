@@ -21,6 +21,14 @@ export const navigation = [
         navid:7,
         link: <Link href="/soru-cevap">Soru / Cevap</Link>
     },
+    {
+        navid:8,
+        link: <Link href="/kayit-ol">+ Kayıt Ol!</Link>
+    },
+    {
+        navid:9,
+        link: <Link href="/oturum-ac">+ Giriş Yap</Link>
+    },
 ]
 
 

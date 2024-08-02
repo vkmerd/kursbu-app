@@ -53,7 +53,7 @@ export default function Faq() {
                 <img src="/cta-left.png" className="absolute hidden lg:inline left-[-20%] z-0" />
                 <img src="/cta-right.png" className="absolute hidden lg:inline right-[-20%] z-0" />
                 <div className="max-w-[1320px] mx-auto">
-                    <h2 className="text-4xl text-center py-[35px] text-[#0f24ea] font-bold">Sık Sorulan Sorular!</h2>
+                    <h2 className="text-4xl text-center py-[35px] text-[#007bff] font-bold">Sıkça Sorulan Sorular!</h2>
                     <div className="grid grid-cols-1 items-center md:grid-cols-2">
                         <img src="/faq.jpg" className="max-w-full lg:z-0" />
                         <div className="z-10">

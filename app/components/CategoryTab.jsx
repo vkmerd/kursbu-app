@@ -15,7 +15,7 @@ export const categoryTabReducer = (state, action) => {
   export const tabs = [
     { id: 'Tab1', head:"Akademik Destek", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -25,7 +25,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -35,7 +35,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -45,7 +45,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -55,7 +55,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -65,7 +65,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -75,7 +75,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -85,7 +85,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -100,7 +100,7 @@ export const categoryTabReducer = (state, action) => {
 
 { id: 'Tab2', head:"Takviye", label: [
     {   
-        img:'/ayse.jpg',
+        img:'/teachers.jpg',
         title: "Matematik Öğretmeni",
         desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
         name:"Ayşe D.",
@@ -110,7 +110,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/ayse-has"
     },
     {
-        img:'/omer.jpg',
+        img:'/teachers.jpg',
         title: "Eğitimci Mühendis",
         desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
         name:"Buğra H.",
@@ -120,7 +120,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/omer-handan"
     },
     {   
-        img:'/ayse.jpg',
+        img:'/teachers.jpg',
         title: "Matematik Öğretmeni",
         desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
         name:"Ayşe D.",
@@ -130,7 +130,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/ayse-has"
     },
     {
-        img:'/omer.jpg',
+        img:'/teachers.jpg',
         title: "Eğitimci Mühendis",
         desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
         name:"Buğra H.",
@@ -140,7 +140,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/omer-handan"
     },
     {   
-        img:'/ayse.jpg',
+        img:'/teachers.jpg',
         title: "Matematik Öğretmeni",
         desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
         name:"Ayşe D.",
@@ -150,7 +150,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/ayse-has"
     },
     {
-        img:'/omer.jpg',
+        img:'/teachers.jpg',
         title: "Eğitimci Mühendis",
         desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
         name:"Buğra H.",
@@ -160,7 +160,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/omer-handan"
     },
     {   
-        img:'/ayse.jpg',
+        img:'/teachers.jpg',
         title: "Matematik Öğretmeni",
         desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
         name:"Ayşe D.",
@@ -170,7 +170,7 @@ export const categoryTabReducer = (state, action) => {
         link:"/egitim-danismanlari/ayse-has"
     },
     {
-        img:'/omer.jpg',
+        img:'/teachers.jpg',
         title: "Eğitimci Mühendis",
         desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
         name:"Buğra H.",
@@ -184,7 +184,7 @@ export const categoryTabReducer = (state, action) => {
 
     { id: 'Tab3', head:"Sanat ve Yaratıcılık", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -194,7 +194,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -204,7 +204,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -214,7 +214,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -224,7 +224,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -234,7 +234,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -244,7 +244,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -254,7 +254,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -267,7 +267,7 @@ export const categoryTabReducer = (state, action) => {
 
     { id: 'Tab4', head:"Yabancı Dil", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -277,7 +277,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -287,7 +287,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -297,7 +297,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -307,7 +307,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -317,7 +317,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -327,7 +327,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -337,7 +337,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -350,7 +350,7 @@ export const categoryTabReducer = (state, action) => {
 },
     { id: 'Tab5',head:"Sınav Hazırlık Kursları", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -360,7 +360,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -370,7 +370,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -380,7 +380,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -390,7 +390,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -400,7 +400,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -410,7 +410,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -420,7 +420,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -433,7 +433,7 @@ export const categoryTabReducer = (state, action) => {
 },
     { id: 'Tab6', head:"Spor ve Fiziksel Aktivite", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -443,7 +443,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -453,7 +453,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -463,7 +463,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -473,7 +473,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -483,7 +483,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -493,7 +493,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -503,7 +503,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -516,7 +516,7 @@ export const categoryTabReducer = (state, action) => {
 },
     { id: 'Tab7',  head:"Sağlık ve Psikolojik Destek", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -526,7 +526,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -536,7 +536,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -546,7 +546,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -556,7 +556,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -566,7 +566,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -576,7 +576,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -586,7 +586,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -599,7 +599,7 @@ export const categoryTabReducer = (state, action) => {
 },
     { id: 'Tab8',  head:"Kişisel Gelişim ve Beceriler",  label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -609,7 +609,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -619,7 +619,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -629,7 +629,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -639,7 +639,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -649,7 +649,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -659,7 +659,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -669,7 +669,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -681,7 +681,7 @@ export const categoryTabReducer = (state, action) => {
     ]},
     { id: 'Tab9', head:"Kariyer ve Gelecek Planlama", label: [
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -691,7 +691,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -701,7 +701,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -711,7 +711,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -721,7 +721,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -731,7 +731,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",
@@ -741,7 +741,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/omer-handan"
         },
         {   
-            img:'/ayse.jpg',
+            img:'/teachers.jpg',
             title: "Matematik Öğretmeni",
             desc: "10 yıldır matematik öğretmeni olarak görev yapmaktayım",
             name:"Ayşe D.",
@@ -751,7 +751,7 @@ export const categoryTabReducer = (state, action) => {
             link:"/egitim-danismanlari/ayse-has"
         },
         {
-            img:'/omer.jpg',
+            img:'/teachers.jpg',
             title: "Eğitimci Mühendis",
             desc: "Deneyimli eğitimci bir mühendisim, dershane geçmişim ve eği...",
             name:"Buğra H.",

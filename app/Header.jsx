@@ -39,7 +39,7 @@ export default function Header(){
                 </div>
                 <button className="w-[40px] h-[40px] text-white bg-[#000] text-xl rounded-full ml-[30px] mt-[60px]" onClick={() => setMobileMenu(false)}>X</button>
             </div>
-        <header className="w-full flex justify-center py-[15px]">
+        <header className="w-full fixed z-50 shadow-xl bg-white flex justify-center py-[15px]">
             <nav className="w-4/5 flex justify-between items-center">
                 <Link href="/" className="block">
                     <div>

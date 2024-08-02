@@ -21,7 +21,7 @@ export default function Banner(){
             </defs>
           </svg>
         </div>
-        <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-[60px]">
+        <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-[120px] lg:py-[60px]">
       <motion.div 
         initial={{ opacity: "0", translateY: "50px" }} 
         animate={{ opacity: "1", translateY: "0px" }} 

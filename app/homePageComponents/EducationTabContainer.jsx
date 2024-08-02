@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function EducationTabContainer() {
   const [state, dispatch] = useReducer(categoryTabReducer, initialTabState);
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const [activefavorite, setActiveFavorite] = useState(false)
+  // const [isFavorite, setIsFavorite] = useState(false);
 
   const handleCategoryTabClick = (tab) => {
     dispatch({ type: 'SELECT_TAB', payload: tab });
@@ -40,21 +40,21 @@ export default function EducationTabContainer() {
   //   }
   // };
 
-  const favoriteHandle = () => {
-    setActiveFavorite(true);
+  // const favoriteHandle = () => {
+  //   setIsFavorite(!isFavorite);
 
-    setTimeout(() => {
-      setActiveFavorite(false); 
-    }, 4000);
-  }
+  //   setTimeout(() => {
+  //     setIsFavorite(false); 
+  //   }, 4000);
+  // }
 
   return (
   <>
-    {activefavorite ? (
+    {/* {isFavorite ? (
       <div className="fixed left-[40%] top-[20%] items-center bg-[#008000] text-white py-[20px] px-[15px] z-50">
         <h3 className="text-white text-2xl">İlgili öğretmen favorilere eklendi!</h3>
       </div>
-    ) : false}
+    ) : false} */}
    
   <div className='w-full py-[60px]'>
     <h2 className="text-3xl text-center text-[#234DD4] font-bold md?text-4xl">Kategoriye Göre Öne Çıkan Konular</h2>
@@ -84,18 +84,14 @@ export default function EducationTabContainer() {
                     animate="visible"
                     variants={tabContentVariants}
                     transition={{ duration: 0.5 }}
-                    className="bg-[#fff] shadow-custom py-[10px] px-[10px] md:py-[15px] md:px-[15px] hover:shadow-customHover transition duration-300"
+                    className="bg-[#fff] shadow-custom rounded-[20px] py-[10px] px-[10px] md:py-[15px] md:px-[15px] hover:shadow-customHover transition duration-300"
                   >
                     <div className="flex justify-between items-center">
                        <h3 className="text-lg font-bold">{labelItem.title}</h3>
-                       <button onClick={favoriteHandle}>
-                          <svg className="w-[25px] h-[25px]  hover:opacity-50 transition duration-300">
-                              <use href="#hearts" className="text-[#fff]" target="_blank" />
-                          </svg>
-                       </button>
+                       
                     </div>
                     <div className="flex flex-col justify-between items-start mt-[10px] md:mt-[20px]">
-                      <img src={labelItem.img} alt={labelItem.title} className="w-full" />
+                      <img src={labelItem.img} alt={labelItem.title} className="w-full rounded-[20px]" />
                       <div className="mt-[10px] md:mt-0">
                         <p className="font-bold text-lg">{labelItem.name}</p>
                         <p className="py-[5px]">{labelItem.desc}</p>
