@@ -9,13 +9,8 @@ export default function Header(){
     const [mobileMenu, setMobileMenu] = useState(false)
     return(
         <>
-            <div className={`fixed left-0 top-0 right-0 bottom-0 z-10 flex transition-transform duration-300 bg-[#2d2f31cc] ${mobileMenu ? 'translate-x-0' : '-translate-x-full'}`}>
-                <div className="px-[25px] py-[50px] bg-[#fff] w-3/4 h-full">
-                <Link href="/" >
-                    <div>
-                        <img src="/kursbu-logo.webp" alt="logo" className="max-w-full"  />
-                    </div>
-                </Link>
+            <div className={`fixed left-0 top-0 right-0 bottom-0 z-10 flex transition-transform duration-300 bg-[#2d2f31cc] z-50 ${mobileMenu ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className="px-[25px] py-[120px] bg-[#fff] w-3/4 h-full">
                   <ul className="flex flex-col mt-5 gap-[10px] overflow-y-scroll">
                       <Link href="/oturum-ac" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Oturum Aç</Link>
                       <Link href="/kayit-ol" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">+ Kayıt Ol</Link>
@@ -37,7 +32,7 @@ export default function Header(){
                       <Link href="/bir-egitmen-bul" className="py-1 text-[15px] text-black hover:opacity-50 transition duration-300">Yardım ve Destek</Link>
                   </ul>
                 </div>
-                <button className="w-[40px] h-[40px] text-white bg-[#000] text-xl rounded-full ml-[30px] mt-[60px]" onClick={() => setMobileMenu(false)}>X</button>
+                <button className="w-[40px] h-[40px] text-white bg-[#000] text-xl rounded-full ml-[25px] mt-[120px]" onClick={() => setMobileMenu(false)}>X</button>
             </div>
         <header className="w-full fixed z-50 shadow-xl bg-white flex justify-center py-[15px]">
             <nav className="w-4/5 flex justify-between items-center">
