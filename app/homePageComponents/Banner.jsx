@@ -27,7 +27,7 @@ export default function Banner(){
         animate={{ opacity: "1", translateY: "0px" }} 
         className="adasd mb-8 md:mb-0"
       > 
-        <h2 className="font-bold text-4xl lg:text-6xl">
+        <h2 className="font-bold text-3xl lg:text-6xl">
          Profilinizi oluşturun, başarıya adım atın!
         </h2>
         <div className="mt-[25px] flex md:flex-row items-center gap-4">

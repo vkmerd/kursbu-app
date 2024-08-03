@@ -17,6 +17,7 @@ CREATE TABLE `Student` (
     `name` VARCHAR(191) NOT NULL,
     `surname` VARCHAR(191) NOT NULL,
     `phone` VARCHAR(191) NOT NULL,
+    `photo` VARCHAR(191) NOT NULL,
     `userId` INTEGER NOT NULL,
 
     UNIQUE INDEX `Student_userId_key`(`userId`),
@@ -29,6 +30,7 @@ CREATE TABLE `Teacher` (
     `name` VARCHAR(191) NOT NULL,
     `surname` VARCHAR(191) NOT NULL,
     `phone` VARCHAR(191) NOT NULL,
+    `photo` VARCHAR(191) NOT NULL,
     `userId` INTEGER NOT NULL,
 
     UNIQUE INDEX `Teacher_userId_key`(`userId`),

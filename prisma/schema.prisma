@@ -23,6 +23,7 @@ model Student {
   name      String
   surname   String
   phone     String
+  photo     String
   user      User   @relation(fields: [userId], references: [id])
   userId    Int    @unique
   lessonRequests LessonRequest[]
@@ -33,6 +34,7 @@ model Teacher {
   name      String
   surname   String
   phone     String
+  photo     String
   user      User   @relation(fields: [userId], references: [id])
   userId    Int    @unique
   lessonRequests LessonRequest[]

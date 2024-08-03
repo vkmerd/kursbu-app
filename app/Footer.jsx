@@ -39,7 +39,7 @@ export default function Footer(){
                     <div className="grid grid-cols-1 gap-[25px] md:grid-cols-2 lg:grid-cols-4">
                         <div>
                             <Link href="/" className="block">
-                                <img src="/kursbu-logo.webp" alt="logo" className=""  />
+                                <img src="/footer-logo.png" alt="logo" className=""  />
                             </Link>
                             <p className="text-lg text-white mt-[20px]">Kursbu, öğretmenlerin eğitim hizmetlerini, öğrencilerin ise eğitim ihtiyaçlarını en iyi şekilde karşılamaya çalışan bir platformdur.</p>
                             <div className="flex gap-[10px] mt-[25px]">
