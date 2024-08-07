@@ -1,7 +1,5 @@
 "use client";
 
-import Uploads from "@/app/api/endpoints/upload";
-
 import { useState } from "react";
 
 export default function Register() {
