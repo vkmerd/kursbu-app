@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 
 export default function Register() {
@@ -36,7 +35,6 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const registerFormData = Object.fromEntries(new FormData(e.target))
-    setData(registerFormData)
   };
 
   return (
