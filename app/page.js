@@ -14,6 +14,7 @@ export default function Home() {
     <main className="overflow-x-clip">
       <Header />
         <Banner />
+        <About />
         <HowDoesItWork />
         <EducationTabContainer />
         <Info />

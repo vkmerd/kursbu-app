@@ -2,11 +2,33 @@
 import Link from "next/link";
 import { educationNavigation, navigation } from "./components/Navigation";
 import { useState } from "react";
+import { signOut, useSession } from "next-auth/react";
+// import { useRouter } from "next/router";
 
 
 
 export default function Header(){
     const [mobileMenu, setMobileMenu] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const {data:session} = useSession();
+    // const [isMounted, setIsMounted] = useState(false);
+    // const router = useRouter();
+    console.log(session);
+
+    // useEffect(() => {
+    //   setIsMounted(true); 
+    // }, []);
+
+    // const handleDashboardRedirect = () => {
+    //     if(session?.user?.role === "STUDENT"){
+    //         router.push("/panel/ogrenci")
+    //     }
+    //     else if(session?.user?.role === "TEACHER"){
+    //         router.push("/panel/ogretmen")
+    //     }
+    // }
+
     return(
         <>
             <div className={`absolute left-0 top-0 right-0 bottom-0 z-10 flex transition-transform duration-300 bg-[#2d2f31cc] z-50 ${mobileMenu ? 'translate-x-0' : '-translate-x-full'}`}>
@@ -44,30 +66,79 @@ export default function Header(){
                     <div>
                         <img src="/kursbu-logo.webp" alt="logo" className="w-[200px] lg:w-full"  />
                     </div>
-                </Link>
-                <div className="w-full flex">
-                    <div className="w-3/5 relative">
-                        <input 
-                                type="text" 
-                                className="w-full border-2 border-black rounded-md px-10 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                placeholder="Dilediğin Kursu Arat" 
-                            />
-                            <svg height="25" viewBox="0 0 32 32" width="25" xmlns="http://www.w3.org/2000/svg" className="absolute top-[25%] left-[10px]"><g id="search" fill-rule="evenodd"><path d="m23 1h-14a8 8 0 0 0 -8 8v14a8 8 0 0 0 8 8h14a1 1 0 0 0 0-2h-14a6 6 0 0 1 -6-6v-14a6 6 0 0 1 6-6h14a6 6 0 0 1 6 6v14a1 1 0 0 0 2 0v-14a8 8 0 0 0 -8-8z"/><path d="m21.983 20.568a9.17 9.17 0 1 0 -1.415 1.415l8.725 8.724a1 1 0 1 0 1.414-1.414zm-7.15 1.432a7.167 7.167 0 1 1 7.167-7.167 7.17 7.17 0 0 1 -7.167 7.167z"/></g></svg>
-                    </div>
+                </Link>                  
 
-                    <ul className="flex items-center hidden lg:flex">
-                        {navigation.map((navigations) => (
-                            <li key={navigations.navid} className="px-[15px] text-[15px] flex items-center hover:opacity-50 transition duration-300">
-                                {navigations.icon}
-                                {navigations.link}
-                            </li>
-                        ))}
-                        <button className="bg-[#234DD4] py-[10px] px-[15px] ml-[15px] text-white rounded-[20px] hover:bg-[#ffc44d] transition duration-300">+ Özel Ders Ver!</button>
-                    </ul>
+                <ul className="flex items-center hidden lg:flex">
+  {navigation.map((navigations) => (
+    <li
+      key={navigations.navid}
+      className="px-[15px] text-[15px] flex items-center hover:opacity-50 transition duration-300"
+    >
+      {navigations.icon}
+      {navigations.link}
+    </li>
+  ))}
+
+  <button className="bg-[#234DD4] py-[10px] px-[15px] ml-[15px] text-white rounded-[20px] hover:bg-[#ffc44d] transition duration-300">
+    + Özel Ders Ver!
+  </button>
+  {session?.user?.photo && (
+    <div className="relative ml-4">
+      <div
+        className="flex items-center gap-3 cursor-pointer"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <img
+          src={session.user.photo}
+          alt="Kullanıcı Fotoğrafı"
+          className="w-[50px] h-[50px] rounded-full"
+        />
+        <p>Hoş geldin, {session?.user?.name}!</p>
+        <svg
+  className="w-6 h-6 ml-1 transform rotate-180 "
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    d="M5 15l7-7 7 7"
+  />
+</svg>
+
+      </div>
+
+      {menuOpen && (
+        <div className="absolute z-50 mt-2 bg-white shadow-lg rounded-lg p-4 w-full">
+        
+          <button
+            onClick={() => signOut({ callbackUrl: "/" })}
+            className="flex items-center bg-white text-md py-2 px-4 w-full text-center block mb-2"
+          >
+             <svg className="w-[35px] h-[35px] mr-3">
+                <use href="#signout" />
+            </svg>
+            Çıkış Yap
+          </button>
+          <Link href={session?.user?.role === "STUDENT" ? "/panel/ogrenci" : "/panel/ogretmen"} className="flex items-center bg-white text-md py-2 px-4 w-full text-center block">
+          <svg className="w-[35px] h-[35px] mr-3">
+                <use href="#dashboard" />
+            </svg>
+
+              Dashboard
+          </Link>
+        </div>
+      )}
+    </div>
+  )}
+</ul>
+
                     <div className="open-side-mobil-menu block lg:hidden" onClick={() => setMobileMenu(true)}>
                         <svg id="bold" enable-background="new 0 0 24 24" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m12 0c-6.617 0-12 5.383-12 12s5.383 12 12 12 12-5.383 12-12-5.383-12-12-12zm4 17h-8c-.552 0-1-.448-1-1s.448-1 1-1h8c.552 0 1 .448 1 1s-.448 1-1 1zm0-4h-8c-.552 0-1-.448-1-1s.448-1 1-1h8c.552 0 1 .448 1 1s-.448 1-1 1zm0-4h-8c-.552 0-1-.448-1-1s.448-1 1-1h8c.552 0 1 .448 1 1s-.448 1-1 1z"/></svg>
                     </div>
-                </div>
             </nav>
         </header>
         </>

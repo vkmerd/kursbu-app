@@ -1,11 +1,18 @@
-"use client";
+"use client"
+import Link from "next/link";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Register() {
   const [fileName, setFileName] = useState('Resminizi Yükleyiniz');
   const [preview, setPreview] = useState(null);
-  const [formData, setFormData] = useState({});
-  const [data,setData] = useState({})
+  const [formDatas, setFormData] = useState({});
+  const [datas,setData] = useState({})
+  const [message, setMessage] = useState('');
+  const [showSession, setShowSession] = useState(false)
+  const [showMessage, setShowMessage] = useState(false);
   
 
   const handlePhotoChange = (e) => {
@@ -34,8 +41,33 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const registerFormData = Object.fromEntries(new FormData(e.target))
+  
+    const formData = Object.fromEntries(new FormData(e.target))
+    const fileName = formData.user_image.name
+
+    try {
+      const response = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({...formData, photos: preview, userPhotoName:fileName}), 
+      });
+  
+      if (response.ok) {
+        const result = await response.json();
+        toast.success(result.message);
+        setShowSession(true)
+        e.target.reset();
+      } else {
+        console.error('Something went wrong:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error during form submission:', error);
+      toast.error('Bir hata oluştu. Lütfen tekrar deneyin.');
+    }
   };
+  
 
   return (
     <>
@@ -45,7 +77,7 @@ export default function Register() {
           <h2 className="text-2xl font-bold font-poppins">Kursbu App Platformuna Hoş Geldiniz!</h2>
           <div className="mt-[40px]">
             <h2 className="text-3xl">Kayıt Ol!</h2>
-            <form onSubmit={handleSubmit} enctype="multipart/form-data" className="grid grid-cols-1 gap-3 mt-[20px] md:grid-cols-2 lg:grid-cols-3">
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-3 mt-[20px] md:grid-cols-2 lg:grid-cols-3">
               <input
                 type="text"
                 name="name"
@@ -141,6 +173,11 @@ export default function Register() {
                 Kayıt Ol
               </button>
             </form>
+            {showSession ? (
+              <Link href="/oturum-ac" className="text-lg font-bold mt-3">
+                Şimdi Kursbu ile yolculuğunuza başlayın!
+              </Link>
+            ) : ""}
           </div>
         </div>
         <div className="loginImage basis-2/5">
@@ -151,5 +188,5 @@ export default function Register() {
       </div>
     </div>
     </>
-  );
+  )
 }

@@ -9,9 +9,12 @@ datasource db {
 
 model User {
   id        Int      @id @default(autoincrement())
+  name      String
+  surname   String
   email     String   @unique
   password  String
   role      Role
+  photo     String?
   student   Student?
   teacher   Teacher?
   createdAt DateTime @default(now())
@@ -19,34 +22,66 @@ model User {
 }
 
 model Student {
-  id        Int    @id @default(autoincrement())
-  name      String
-  surname   String
-  phone     String
-  photo     String
-  user      User   @relation(fields: [userId], references: [id])
-  userId    Int    @unique
-  lessonRequests LessonRequest[]
+  id          Int          @id @default(autoincrement())
+  name        String
+  surname     String
+  email       String?      @unique
+  phone       String
+  photo       String
+  user        User         @relation(fields: [userId], references: [id])
+  userId      Int          @unique
+  studentPage StudentPage? 
 }
 
 model Teacher {
-  id        Int    @id @default(autoincrement())
-  name      String
-  surname   String
-  phone     String
-  photo     String
-  user      User   @relation(fields: [userId], references: [id])
-  userId    Int    @unique
-  lessonRequests LessonRequest[]
+  id                    Int          @id @default(autoincrement())
+  name                  String
+  surname               String
+  phone                 String
+  photo                 String
+  email                 String?      @unique
+  user                  User         @relation(fields: [userId], references: [id])
+  userId                Int          @unique
+  service_lessons       String?
+  teacher_rating        Float?
+  teacher_about         String?
+  teacher_city          String?
+  teacher_lessons_price Float?
+  teacherPage           TeacherPage?
 }
 
-model LessonRequest {
-  id         Int      @id @default(autoincrement())
-  student    Student  @relation(fields: [studentId], references: [id])
-  studentId  Int
-  teacher    Teacher  @relation(fields: [teacherId], references: [id])
-  teacherId  Int
-  createdAt  DateTime @default(now())
+model TeacherPage {
+  id                    Int      @id @default(autoincrement())
+  teacher               Teacher  @relation(fields: [teacherId], references: [id])
+  teacherId             Int      @unique
+  slug                  String   @unique
+  service_lessons       String?
+  teacher_about         String?  @db.Text
+  teacher_city          String?
+  teacher_private_lesson_topic String?
+  teacher_photos String?
+  teacher_district String?
+  teacher_lessons_price Float?
+  teacher_professional_title   String?
+  teacher_lessons   String?
+  teacher_experience   String?
+  teacher_lesson_category_text   String?
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}
+
+model StudentPage {
+  id              Int      @id @default(autoincrement())
+  student         Student  @relation(fields: [studentId], references: [id])
+  studentId       Int      @unique
+  slug            String   @unique
+  student_title   String?
+  student_about   String?  @db.Text
+  student_city    String?
+  student_photos  String?
+  student_district String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 }
 
 enum Role {
